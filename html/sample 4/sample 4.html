@@ -1,0 +1,1548 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title>DOCX Demo</title>
+	<meta name="generator" content="LibreOffice 5.4.1.2 (Windows)"/>
+	<meta name="author" content="Kovid Goyal"/>
+	<meta name="created" content="2013-06-05T07:56:00"/>
+	<meta name="changedby" content="kovid"/>
+	<meta name="changed" content="2013-06-20T06:14:00"/>
+	<meta name="description" content="Demonstration of DOCX support in calibre"/>
+	<meta name="keywords" content="calibre, docs, ebook, conversion"/>
+	<meta name="AppVersion" content="12.0000"/>
+	<meta name="DocSecurity" content="0"/>
+	<meta name="HyperlinksChanged" content="false"/>
+	<meta name="LinksUpToDate" content="false"/>
+	<meta name="ScaleCrop" content="false"/>
+	<meta name="ShareDoc" content="false"/>
+	<style type="text/css">
+		@page { margin: 1in }
+		p { text-indent: 0.3in; margin-bottom: 0.1in; direction: ltr; line-height: 120%; text-align: left; orphans: 2; widows: 2 }
+		p.western { font-family: "Ubuntu", serif; font-size: 12pt }
+		p.cjk { font-size: 12pt }
+		h1 { margin-top: 0.33in; margin-bottom: 0in; direction: ltr; color: #365f91; line-height: 115%; text-align: center; page-break-inside: avoid; orphans: 2; widows: 2; page-break-before: always }
+		h1.western { font-family: "Ubuntu", serif; font-size: 14pt }
+		h1.cjk { font-family: ; font-size: 14pt }
+		h1.ctl { font-family: ; font-size: 14pt }
+		h2 { margin-bottom: 0in; direction: ltr; color: #4f81bd; line-height: 115%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2 }
+		h2.western { font-family: "Ubuntu", serif; font-size: 13pt }
+		h2.cjk { font-family: ; font-size: 13pt }
+		h2.ctl { font-family: ; font-size: 13pt }
+		a:link { color: #0000ff }
+		a.sdfootnoteanc { font-size: 57% }
+		a.sdendnoteanc { font-size: 57% }
+	</style>
+</head>
+<body lang="en-US" link="#0000ff" dir="ltr">
+<p style="text-indent: 0in; margin-bottom: 0.21in; border-top: none; border-bottom: 1.00pt solid #4f81bd; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.06in; padding-left: 0in; padding-right: 0in; letter-spacing: 0.3pt; line-height: 100%"><a name="_Toc359077851"></a><a name="OLE_LINK2"></a><a name="OLE_LINK1"></a>
+<font color="#17365d"><font size="6" style="font-size: 26pt">Demonstration
+of DOCX support in calibre</font></font></p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">This
+document demonstrates the ability of the calibre DOCX Input plugin to
+convert the various typographic features in a Microsoft Word (2007
+and newer) document. Convert this document to a modern ebook format,
+such as AZW3 for Kindles or EPUB for other ebook readers, to see it
+in action.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">There
+is support for images, tables, lists, footnotes, endnotes, links,
+dropcaps and various types of text and paragraph level formatting.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">To
+see the DOCX conversion in action, simply add this file to calibre
+using the <b>&ldquo;Add Books&rdquo; </b>button and then click
+&ldquo;<b>Convert&rdquo;. </b> Set the output format in the top right
+corner of the conversion dialog to EPUB or AZW3 and click <b>&ldquo;OK&rdquo;</b>.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"><br/>
+
+</p>
+<h1 class="western"><a name="_Toc359077852"></a>Text Formatting</h1>
+<h2 class="western"><a name="_Toc359077853"></a>Inline formatting</h2>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Here,
+we demonstrate various types of inline text formatting and the use of
+embedded fonts.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Here
+is some <b>bold, </b><i>italic, </i><i><b>bold-italic, </b></i><u>underlined
+</u>and <strike>struck out </strike> text. Then, we have a
+super<sup>script</sup> and a sub<sub>script</sub>. Now we see some
+<font color="#ff0000">red</font>, <font color="#92d050">green</font>
+and <font color="#0070c0">blue</font> text. Some text with a yellow
+highlight. Some text in a <span style="display: inline-block; border: 1px solid #00000a; padding: 0in">box</span>.
+Some text in <font color="#ffffff"><span style="background: #000000">inverse
+video</span></font>.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">A
+paragraph with styled text: <font color="#808080"><i>subtle emphasis 
+</i></font>followed by <b>strong text </b>and <font color="#4f81bd"><i><b>intense
+emphasis</b></i></font>. This paragraph uses document wide styles for
+styling rather than inline text properties as demonstrated in the
+previous paragraph &mdash; calibre can handle both with equal ease.</p>
+<h2 class="western"><a name="_Toc359077854"></a>Fun with fonts</h2>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">This
+document has embedded the Ubuntu font family. The body text is in the
+Ubuntu typeface, here is <font face="Ubuntu Mono, serif">some text in
+the Ubuntu Mono typeface, notice how every letter has the same width,
+even i and m</font>. Every embedded font will automatically be
+embedded in the output ebook during conversion. 
+</p>
+<h2 class="western"><a name="_Toc359077855"></a><a name="_Paragraph_level_formatting"></a>
+<font color="#4f81bd"><b><span style="font-style: normal">Paragraph
+level formatting</span></b></font></h2>
+<p class="western" align="right" style="margin-bottom: 0in; border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.06in; line-height: 115%; background: #dddddd">
+You can do crazy things with paragraphs, if the urge strikes you. For
+instance this paragraph is right aligned and has a right border. It
+has also been given a light gray background.</p>
+<p class="western" style="margin-left: 0.5in; text-indent: -0.5in; margin-top: 0.42in; margin-bottom: 0in; line-height: 115%">
+For the lovers of poetry amongst you, paragraphs with hanging
+indents, like this often come in handy. You can use hanging indents
+to ensure that a line of poetry retains its individual identity as a
+line even when the screen is  too narrow to display it as a single
+line. Not only does this paragraph have a hanging indent, it is also
+has an extra top margin, setting it apart from the preceding
+paragraph.</p>
+<h1 class="western"><a name="_Toc359077856"></a>Tables</h1>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"><table dir="ltr" align="left" width="229" hspace="6" vspace="2" cellpadding="7" cellspacing="0">
+	<col width="106">
+	<col width="93">
+	<tr valign="top">
+		<td width="106" bgcolor="#9bbb59" style="background: #9bbb59" style="border-top: 1.00pt solid #9bbb59; border-bottom: none; border-left: 1.00pt solid #9bbb59; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<p class="western"><font color="#ffffff"><b>ITEM</b></font></p>
+		</td>
+		<td width="93" bgcolor="#9bbb59" style="background: #9bbb59" style="border-top: 1.00pt solid #9bbb59; border-bottom: none; border-left: none; border-right: 1.00pt solid #9bbb59; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+			<p class="western"><font color="#ffffff"><b>NEEDED</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="106" style="border-top: none; border-bottom: none; border-left: 1.00pt solid #9bbb59; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<p class="western">Books</p>
+		</td>
+		<td width="93" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #9bbb59; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+			<p class="western">1</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="106" style="border-top: none; border-bottom: none; border-left: 1.00pt solid #9bbb59; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<p class="western">Pens</p>
+		</td>
+		<td width="93" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #9bbb59; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+			<p class="western">3</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="106" style="border-top: none; border-bottom: none; border-left: 1.00pt solid #9bbb59; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<p class="western">Pencils</p>
+		</td>
+		<td width="93" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #9bbb59; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+			<p class="western">2</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="106" style="border-top: none; border-bottom: none; border-left: 1.00pt solid #9bbb59; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<p class="western">Highlighter</p>
+		</td>
+		<td width="93" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #9bbb59; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+			<p class="western">2 colors</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="106" style="border-top: none; border-bottom: 1.00pt solid #9bbb59; border-left: 1.00pt solid #9bbb59; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<p class="western">Scissors</p>
+		</td>
+		<td width="93" style="border-top: none; border-bottom: 1.00pt solid #9bbb59; border-left: none; border-right: 1.00pt solid #9bbb59; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+			<p class="western">1 pair</p>
+		</td>
+	</tr>
+</table>Tables in Word can vary from the extremely simple to the
+extremely complex. calibre tries to do its best when converting
+tables. While you may run into trouble with the occasional table, the
+vast majority of common cases should be converted very well, as
+demonstrated in this section. Note that for optimum results, when
+creating tables in Word, you should set their widths using
+percentages, rather than absolute units.  To the left of this
+paragraph is a floating two column table with a nice green border and
+header row.
+</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Now
+let&rsquo;s look at a fancier table&mdash;one with alternating row
+colors and partial borders. This table is stretched out to take 100%
+of the available width.</p>
+<table width="100%" cellpadding="7" cellspacing="0">
+	<col width="42*">
+	<col width="43*">
+	<col width="43*">
+	<col width="44*">
+	<col width="44*">
+	<col width="40*">
+	<tbody>
+		<tr valign="top">
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: 3.00pt solid #4f81bd; border-left: none; border-right: none; padding: 0in">
+				<p class="western"><font color="#00000a"><font face="Ubuntu, serif"><font size="2" style="font-size: 11pt">City
+				or Town</font></font></font></p>
+			</td>
+			<td width="17%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: 3.00pt solid #4f81bd; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif"><font size="2" style="font-size: 11pt">Point
+				A</font></font></font></p>
+			</td>
+			<td width="17%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: 3.00pt solid #4f81bd; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif"><font size="2" style="font-size: 11pt">Point
+				B</font></font></font></p>
+			</td>
+			<td width="17%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: 3.00pt solid #4f81bd; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif"><font size="2" style="font-size: 11pt">Point
+				C</font></font></font></p>
+			</td>
+			<td width="17%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: 3.00pt solid #4f81bd; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif"><font size="2" style="font-size: 11pt">Point
+				D</font></font></font></p>
+			</td>
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: 3.00pt solid #4f81bd; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif"><font size="2" style="font-size: 11pt">Point
+				E</font></font></font></p>
+			</td>
+		</tr>
+		<tr></tr>
+		<tr></tr>
+	</tbody>
+	<tbody>
+		<tr valign="top">
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western"><font color="#00000a"><font face="Ubuntu, serif">Point
+				A</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a">&mdash;</font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+			<td width="16%" bgcolor="#d3dfee" style="background: #d3dfee" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western"><font color="#00000a"><font face="Ubuntu, serif">Point
+				B</font></font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">87</font></font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a">&mdash;</font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+			<td width="16%" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western"><font color="#00000a"><font face="Ubuntu, serif">Point
+				C</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">64</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">56</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a">&mdash;</font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+			<td width="16%" bgcolor="#d3dfee" style="background: #d3dfee" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western"><font color="#00000a"><font face="Ubuntu, serif">Point
+				D</font></font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">37</font></font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">32</font></font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">91</font></font></p>
+			</td>
+			<td width="17%" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a">&mdash;</font></p>
+			</td>
+			<td width="16%" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="center"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="16%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western"><font color="#00000a"><font face="Ubuntu, serif">Point
+				E</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">93</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">35</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">54</font></font></p>
+			</td>
+			<td width="17%" bgcolor="#d3dfee" style="background: #d3dfee" style="border: none; padding: 0in">
+				<p class="western" align="center"><font color="#00000a"><font face="Ubuntu, serif">43</font></font></p>
+			</td>
+			<td width="16%" bgcolor="#d3dfee" style="background: #d3dfee" style="border-top: none; border-bottom: none; border-left: none; border-right: 1.00pt solid #4f81bd; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="center"><font color="#00000a">&mdash;</font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"><br/>
+
+</p>
+<p class="western" style="margin-top: 0.17in; margin-bottom: 0.17in; line-height: 115%">
+Next, we see a table with special formatting in various locations.
+Notice how the formatting for the header row and sub header rows is
+preserved.</p>
+<table width="100%" cellpadding="7" cellspacing="1">
+	<col width="64*">
+	<col width="64*">
+	<col width="64*">
+	<col width="64*">
+	<tbody>
+		<tr valign="top">
+			<td width="25%" bgcolor="#4bacc6" style="background: #4bacc6" style="border-top: 2.25pt solid #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p class="western"><font color="#ffffff"><b>College</b></font></p>
+			</td>
+			<td width="25%" bgcolor="#4bacc6" style="background: #4bacc6" style="border-top: 2.25pt solid #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p class="western"><font color="#ffffff"><b>New students</b></font></p>
+			</td>
+			<td width="25%" bgcolor="#4bacc6" style="background: #4bacc6" style="border-top: 2.25pt solid #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p class="western"><font color="#ffffff"><b>Graduating students</b></font></p>
+			</td>
+			<td width="25%" bgcolor="#4bacc6" style="background: #4bacc6" style="border-top: 2.25pt solid #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p class="western"><font color="#ffffff"><b>Change</b></font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr valign="top">
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><br/>
+
+				</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><font color="#808080"><i>Undergraduate</i></font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><br/>
+
+				</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western">Cedar University</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">110</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">103</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">+7</font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western">Oak Institute</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">202</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">210</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">-8</font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><br/>
+
+				</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><font color="#808080"><i>Graduate</i></font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><br/>
+
+				</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western">Cedar University</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">24</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">20</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">+4</font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="25%" style="border: none; padding: 0in">
+				<p class="western">Elm College</p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">43</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">53</font></p>
+			</td>
+			<td width="25%" style="border: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">-10</font></p>
+			</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr valign="top">
+			<td width="25%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: 2.25pt double #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p class="western">Total</p>
+			</td>
+			<td width="25%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: 2.25pt double #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">998</font></p>
+			</td>
+			<td width="25%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: 2.25pt double #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">908</font></p>
+			</td>
+			<td width="25%" bgcolor="#ffffff" style="background: #ffffff" style="border-top: 2.25pt double #00000a; border-bottom: 2.25pt solid #00000a; border-left: none; border-right: none; padding: 0in">
+				<p style="text-indent: 0in"><font size="2" style="font-size: 11pt">90</font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 100%"><font size="2" style="font-size: 10pt"><font color="#808080"><i>Source:</i></font>
+Fictitious data, for illustration purposes only</font></p>
+<p class="western" style="margin-top: 0.17in; margin-bottom: 0in; line-height: 115%">
+Next, we have something a little more complex, a nested table, i.e. a
+table inside another table. Additionally, the inner table has some of
+its cells merged. The table is displayed horizontally centered.</p>
+<center>
+	<table width="70%" cellpadding="7" cellspacing="0">
+		<col width="133*">
+		<col width="123*">
+		<tr valign="top">
+			<td width="52%" height="56" style="border: 1px solid #000001; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+				<center>
+					<table width="80%" cellpadding="7" cellspacing="0">
+						<col width="132*">
+						<col width="124*">
+						<tr valign="top">
+							<td rowspan="2" width="51%" style="border: 1px solid #000001; padding: 0in 0.08in">
+								<p class="western" style="text-indent: 0in; margin-top: 0.17in; margin-bottom: 0in">
+								One</p>
+								<p class="western" style="text-indent: 0in; margin-top: 0.17in">
+								Three</p>
+							</td>
+							<td width="49%" style="border: 1px solid #000001; padding: 0in 0.08in">
+								<p class="western" style="text-indent: 0in; margin-top: 0.17in">
+								Two</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="49%" style="border: 1px solid #000001; padding: 0in 0.08in">
+								<p class="western" style="text-indent: 0in; margin-top: 0.17in">
+								Four</p>
+							</td>
+						</tr>
+					</table>
+				</center>
+				<p class="western" style="text-indent: 0in; margin-top: 0.17in; margin-bottom: 0in; line-height: 115%">
+				<br/>
+
+				</p>
+			</td>
+			<td width="48%" style="border: 1px solid #000001; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+				<p class="western" style="text-indent: 0in; margin-top: 0.17in; margin-bottom: 0in; line-height: 100%">
+				To the left is a table inside a table, with some cells merged.</p>
+			</td>
+		</tr>
+	</table>
+</center>
+<p class="western" style="margin-top: 0.17in; margin-bottom: 0in; line-height: 115%">
+<br/>
+
+</p>
+<p class="western" style="margin-top: 0.17in; margin-bottom: 0in; line-height: 115%">
+We end with a fancy calendar, note how much of the original
+formatting is preserved. Note that this table will only display
+correctly on relatively wide screens. In general, very wide tables or
+tables whose cells have fixed width requirements don&rsquo;t fare
+well in ebooks.</p>
+<center>
+	<table width="501" cellpadding="3" cellspacing="0">
+		<col width="52">
+		<col width="9">
+		<col width="60">
+		<col width="9">
+		<col width="52">
+		<col width="9">
+		<col width="52">
+		<col width="9">
+		<col width="52">
+		<col width="9">
+		<col width="52">
+		<col width="10">
+		<col width="50">
+		<col width="4364">
+		<tr valign="top">
+			<td colspan="13" width="494" height="48" style="border: none; padding: 0in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif"><font size="6" style="font-size: 22pt">December
+				2007</font></font></font></p>
+			</td>
+			<td width="4364" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="bottom">
+			<td width="52" height="32" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">Sun</font></font></p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">Mon</font></font></p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">Tue</font></font></p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">Wed</font></font></p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">Thu</font></font></p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">Fri</font></font></p>
+			</td>
+			<td width="10" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">Sat</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" height="32" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #365f91; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">1</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" height="32" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">2</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #365f91; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">3</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">4</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">5</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">6</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">7</font></font></p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">8</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" height="32" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">9</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #365f91; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">10</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">11</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">12</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">13</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">14</font></font></p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">15</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" height="32" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">16</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #365f91; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">17</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">18</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">19</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">20</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">21</font></font></p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">22</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" height="32" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">23</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #365f91; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">24</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">25</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">26</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">27</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">28</font></font></p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">29</font></font></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: none; border-bottom: 1px solid #7f7f7f; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: none; border-bottom: 1px solid #365f91; border-left: none; border-right: none; padding: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="52" height="32" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#365f91"><font face="Ubuntu, serif">30</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #365f91; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="60" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><font color="#7f7f7f"><font face="Ubuntu, serif">31</font></font></p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="9" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="52" style="border-top: 1px solid #7f7f7f; border-bottom: none; border-left: none; border-right: 3.00pt solid #7f7f7f; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: none; border-left: 3.00pt solid #7f7f7f; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+			<td colspan="2" width="51" style="border-top: 1px solid #365f91; border-bottom: none; border-left: none; border-right: 3.00pt solid #365f91; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in">
+				<p class="western" align="right"><br/>
+
+				</p>
+			</td>
+		</tr>
+	</table>
+</center>
+<h1 class="western"><a name="_Toc359077857"></a>Structural Elements</h1>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Miscellaneous
+structural elements you can add to your document, like footnotes,
+endnotes, dropcaps and the like. 
+</p>
+<h2 class="western"><a name="_Toc359077858"></a>Footnotes &amp;
+Endnotes</h2>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Footnotes<a class="sdfootnoteanc" name="sdfootnote1anc" href="#sdfootnote1sym"><sup>1</sup></a>
+and endnotes<a class="sdendnoteanc" name="sdendnote1anc" href="#sdendnote1sym"><sup>i</sup></a>
+are automatically recognized and both are converted to endnotes, with
+backlinks for maximum ease of use in ebook devices.</p>
+<h2 class="western"><a name="_Toc359077859"></a>Dropcaps</h2>
+<p class="western" style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+<span style="float: left; font-size: 400%">D</span>rop caps are used
+to emphasize the leading paragraph at the start of a section. In Word
+it is possible to specify how many lines of text a drop-cap should
+use. Because of limitations in ebook technology, this is not possible
+when converting.  Instead, the converted drop cap will use font size
+and line height to simulate the effect as well as possible. While not
+as good as the original, the result is usually tolerable. This
+paragraph has a &ldquo;D&rdquo; dropcap set to occupy three lines of
+text with a font size of 58.5 pts. Depending on the screen width and
+capabilities of the device you view the book on, this dropcap can
+look anything from perfect to ugly.</p>
+<h2 class="western"><a name="_Toc359077860"></a>Links</h2>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Two
+kinds of links are possible, those that refer to an external website
+and those that refer to locations inside the document itself. Both
+are supported by calibre. For example, here is a link pointing to the
+<a href="http://calibre-ebook.com/download">calibre download page</a>.
+Then we have a link that points back to the section on <a href="#_Paragraph_level_formatting">paragraph
+level formatting</a> in this document.</p>
+<h2 class="western"><a name="_Toc359077861"></a>Table of Contents</h2>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">There
+are two approaches that calibre takes when generating a Table of
+Contents. The first is if the Word document has a Table of Contents
+itself. Provided that the Table of Contents uses hyperlinks, calibre
+will automatically use it. The levels of the Table of Contents are
+identified by their left indent, so if you want the ebook to have a
+multi-level Table of Contents, make sure you create a properly
+indented Table of Contents in Word.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">If
+no Table of Contents is found in the document, then a table of
+contents is automatically generated from the headings in the
+document. A heading is identified as something that has the Heading 1
+or Heading 2, etc. style applied to it. These headings are turned
+into a Table of Contents with Heading 1 being the topmost level,
+Heading 2 the second level and so on.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"> You
+can see the Table of Contents created by calibre by clicking the
+Table of Contents button in whatever viewer you are using to view the
+converted ebook. 
+</p>
+<div id="Table of Contents1" dir="ltr">
+	<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><b><a href="#_Toc359077851"><font size="3" style="font-size: 12pt">Demonstration
+	of DOCX support in calibre</font><font size="3" style="font-size: 12pt">	1</font></a></b></font></p>
+	<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><b><a href="#_Toc359077852"><font size="3" style="font-size: 12pt">Text
+	Formatting</font><font size="3" style="font-size: 12pt">	2</font></a></b></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077853"><font size="3" style="font-size: 12pt">Inline
+	formatting</font><font size="3" style="font-size: 12pt">	2</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077854"><font size="3" style="font-size: 12pt">Fun
+	with fonts</font><font size="3" style="font-size: 12pt">	2</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077855"><font size="3" style="font-size: 12pt">Paragraph
+	level formatting</font><font size="3" style="font-size: 12pt">	2</font></a></i></font></p>
+	<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><b><a href="#_Toc359077856"><font size="3" style="font-size: 12pt">Tables</font><font size="3" style="font-size: 12pt">	3</font></a></b></font></p>
+	<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><b><a href="#_Toc359077857"><font size="3" style="font-size: 12pt">Structural
+	Elements</font><font size="3" style="font-size: 12pt">	5</font></a></b></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077858"><font size="3" style="font-size: 12pt">Footnotes
+	&amp; Endnotes</font><font size="3" style="font-size: 12pt">	5</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077859"><font size="3" style="font-size: 12pt">Dropcaps</font><font size="3" style="font-size: 12pt">	5</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077860"><font size="3" style="font-size: 12pt">Links</font><font size="3" style="font-size: 12pt">	5</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077861"><font size="3" style="font-size: 12pt">Table
+	of Contents</font><font size="3" style="font-size: 12pt">	5</font></a></i></font></p>
+	<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><b><a href="#_Toc359077862"><font size="3" style="font-size: 12pt">Images</font><font size="3" style="font-size: 12pt">	7</font></a></b></font></p>
+	<p style="margin-top: 0.17in; margin-bottom: 0.08in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><b><a href="#_Toc359077863"><font size="3" style="font-size: 12pt">Lists</font><font size="3" style="font-size: 12pt">	8</font></a></b></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077864"><font size="3" style="font-size: 12pt">Bulleted
+	List</font><font size="3" style="font-size: 12pt">	8</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077865"><font size="3" style="font-size: 12pt">Numbered
+	List</font><font size="3" style="font-size: 12pt">	8</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077866"><font size="3" style="font-size: 12pt">Multi-level
+	Lists</font><font size="3" style="font-size: 12pt">	8</font></a></i></font></p>
+	<p style="margin-left: 0.17in; margin-top: 0.08in; margin-bottom: 0in; line-height: 115%">
+	<font size="2" style="font-size: 10pt"><i><a href="#_Toc359077867"><font size="3" style="font-size: 12pt">Continued
+	Lists</font><font size="3" style="font-size: 12pt">	8</font></a></i></font></p>
+	<p class="western" style="margin-bottom: 0in; line-height: 115%"><br/>
+
+	</p>
+</div>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"><br/>
+
+</p>
+<h1 class="western"><a name="_Toc359077862"></a>Images</h1>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Images
+can be of three main types. Inline images are images that are part of
+the normal text flow, like this image of a green dot 
+<img src="sample%204_html_e2520928fb7bc90f.png" name="Picture 0" align="bottom" hspace="1" width="14" height="14" border="0"/>
+.
+Inline images do not cause breaks in the text and are usually small
+in size.<span class="sd-abs-pos" style="position: absolute; top: 0in; left: 0in; width: 102px"><img src="sample%204_html_d0eaf088db58a08a.png" name="Picture 1" width="102" height="102" border="0"/>
+</span>
+The next category of image is a floating image, one that &ldquo;floats
+&ldquo; on the page and is surrounded by text. Word supports more
+types of floating images than are possible with current ebook
+technology, so the conversion maps floating images to simple left and
+right floats, as you can see with the left and right arrow images on
+the sides of this paragraph.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">The
+final type of image is a &ldquo;block&rdquo; image, one that becomes
+a paragraph on its own and has no text on either side. Below is a
+centered green dot.</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"><span class="sd-abs-pos" style="position: absolute; top: 0in; left: 0in; width: 102px"><img src="sample%204_html_ad4402abc46b559d.png" name="Picture 2" width="102" height="102" border="0"/>
+</span><span class="sd-abs-pos" style="position: absolute; top: 0.01in; left: 0in; width: 26px"><img src="sample%204_html_e2520928fb7bc90f.png" name="Picture 4" width="26" height="26" border="0"/>
+</span>Centered
+images like this are useful for large pictures that should be a focus
+of attention. 
+</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">Generally,
+it is not possible to translate the exact positioning of images from
+a Word document to an ebook. That is because in Word, image
+positioning is specified in absolute units from the page boundaries. 
+There is no analogous technology in ebooks, so the conversion will
+usually end up placing the image either centered or floating close to
+the point in the text where it was <font color="#808080"><i>inserted</i></font>,
+not necessarily where it appears on the page in Word.</p>
+<h1 class="western"><a name="_Toc359077863"></a>Lists</h1>
+<p class="western" style="margin-bottom: 0in; line-height: 115%">All
+types of lists are supported by the conversion, with the exception of
+lists that use fancy bullets, these get converted to regular bullets.</p>
+<h2 class="western"><a name="_Toc359077864"></a>Bulleted List</h2>
+<ul>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	One</p>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	Two</p>
+</ul>
+<h2 class="western"><a name="_Toc359077865"></a>Numbered List</h2>
+<ol>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	One, with a very long line to demonstrate that the hanging indent
+	for the list is working correctly</p>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	Two</p>
+</ol>
+<h2 class="western"><a name="_Toc359077866"></a>Multi-level Lists</h2>
+<ol>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	One</p>
+	<ol>
+		<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+		Two</p>
+		<ol>
+			<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+			Three</p>
+			<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+			Four with a very long line to demonstrate that the hanging indent
+			for the list is working correctly.</p>
+			<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+			Five</p>
+		</ol>
+	</ol>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	Six</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+A Multi-level list with bullets:</p>
+<ul>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	One</p>
+	<ul>
+		<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+		Two</p>
+		<ul style="list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAACXBIWXMAAA8bAAAPGwHXVhiyAAAAYUlEQVR4nHWLsQ6AIAxEH4bJmLCx6GQURgb+/8tQajGYsPiSa9PenRUR/rBtOIeEE0KEQ3cMkFI3G1V166gXlAJXGcwX6WqYwTTD/wvasTRpopp+f82cYd9h21QreA/LDA9VLBb9/WKCdwAAAABJRU5ErkJggg==);">
+			<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+			This bullet uses an image as the bullet item</p>
+			<ul>
+				<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+				Four</p>
+			</ul>
+		</ul>
+	</ul>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	Five</p>
+</ul>
+<h2 class="western"><a name="_Toc359077867"></a>Continued Lists</h2>
+<ol type="i">
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	One</p>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	Two</p>
+</ol>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">An
+interruption in our regularly scheduled listing, for this essential
+and very relevant public service announcement.</p>
+<ol type="i" start="3">
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	We now resume our normal programming</p>
+	<li/>
+<p style="text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+	Four</p>
+</ol>
+<p class="western" style="margin-left: 1in; text-indent: 0in; margin-bottom: 0in; line-height: 115%">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; line-height: 115%"><br/>
+
+</p>
+<div id="sdfootnote1">
+	<p style="text-indent: 0in; margin-bottom: 0in; line-height: 100%; page-break-before: always">
+	<font size="2"><a class="sdfootnotesym" name="sdfootnote1sym" href="#sdfootnote1anc">1</a><sup></sup>
+	In paged media, footnotes are usually displayed at the bottom of the
+	text. However, in ebooks, a better paradigm is to make them
+	clickable endnotes that the user can browse at her pleasure. This
+	conversion is handled automatically by calibre.</font></p>
+</div>
+<div id="sdendnote1">
+	<p style="margin-bottom: 0in; line-height: 100%; page-break-before: always">
+	<font size="2"><a class="sdendnotesym" name="sdendnote1sym" href="#sdendnote1anc">i</a><sup></sup>
+	Endnotes are typically used for longer notes, they remain endnotes
+	when converted into ebook form, except that they have an additional
+	backlink to make it easy to return to the current position after
+	reading the note.</font></p>
+</div>
+</body>
+</html>
